@@ -1,18 +1,27 @@
-const express = require('express');
+const express = require("express");
 const app = express();
+const port = 3000;
+const path = require("path");
 
-app.set('view engine', 'pug');
+app.set("view engine", "pug");
+app.set("views", path.join(__dirname, "views"));
 
-app.use(express.static('public'));
-
-app.get('/', function(req, res) {
-    res.render('index', { title: 'Home' });    
+app.get("/", (req, res) => {
+  res.render("index", { page: "Index" });
 });
 
-app.get('/', function(req, res) {
-    res.render('index', { title: 'Home' });    
+app.get("/salem.html", (req, res) => {
+  res.render("salem", { page: "Salem" });
 });
 
-app.listen(3000, function() {
-    console.log('Server listening on port 3000')
+app.get("/eugene.html", (req, res) => {
+  res.render("eugene", { page: "Eugene" });
+});
+
+app.get("/portland.html", (req, res) => {
+  res.render("portland", { page: "Portland" });
+});
+
+app.listen(port, () => {
+  console.log(`Listening at at http://localhost:${port}`);
 });
