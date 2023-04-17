@@ -4,7 +4,6 @@ html(lang="en")
     title Oregon State Government Website - #{page}
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="style.css")
     script(type="module").
       document.documentElement.classList.remove('no-js');
       document.documentElement.classList.add('js');
@@ -15,7 +14,7 @@ html(lang="en")
       .nav.navbar
         ul.navbar-nav
           li.nav-item
-            a.nav-link(href="index.html") Home
+            a.nav-link(href="oregon.html") Home
           li.nav-item
             a.nav-link(href="salem.html") Salem
           li.nav-item
@@ -23,6 +22,10 @@ html(lang="en")
           li.nav-item
             a.nav-link(href="eugene.html") Eugene
       .main
+      block content
       .aside
+      block sidebar
       .footer
+      img(src='/images/oregon-logo.jpg' alt='oregon state logo')
+      
     script(src="index.js" async)
