@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   head
-    title Oregon State Government Website - #{page}
+    title= "Oregon State Government Website - #{page}"
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     script(type="module").
@@ -26,6 +26,6 @@ html(lang="en")
       .aside
       block sidebar
       .footer
-      img(src='/images/oregon-logo.jpg' alt='oregon state logo')
-      
-    script(src="index.js" async)
+      img(src='/images/oregon-logo.jpg', alt='oregon state logo')
+      script(src="/main.js", async) 
+  

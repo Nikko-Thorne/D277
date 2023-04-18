@@ -12,7 +12,12 @@ app.get("/styles.css", function (req, res) {
   res.set("Content-Type", mime.contentType(path.extname(req.url)));
 });
 
-app.get("/index.js", function (req, res) {
+//redirect from root to home
+app.get("/", (req, res) => {
+  res.redirect("/oregon.html");
+});
+
+app.get("/main.js", function (req, res) {
   res.set("Content-Type", mime.contentType(path.extname(req.url)));
 });
 
