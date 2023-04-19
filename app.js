@@ -8,7 +8,7 @@ const mime = require("mime-types"); //auto content type
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
-app.get("/styles.css", function (req, res) {
+app.get("../styles.css", (req, res) => {
   res.set("Content-Type", mime.contentType(path.extname(req.url)));
 });
 
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   res.redirect("/oregon.html");
 });
 
-app.get("/main.js", function (req, res) {
+app.get("../main.js", (req, res) => {
   res.set("Content-Type", mime.contentType(path.extname(req.url)));
 });
 
@@ -38,8 +38,6 @@ app.get("/portland.html", (req, res) => {
 });
 
 app.use(express.static(path.join(__dirname, "public")));
-
-app.use(express.static("public"));
 
 app.use(function (err, req, res, next) {
   console.error(err.stack);
