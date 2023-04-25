@@ -1,0 +1,5 @@
+body {
+  background-image: url("images/oregon-rock-beach.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image covers the entire background */
+}
