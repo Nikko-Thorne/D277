@@ -4,6 +4,7 @@ body {
   background-position: top;
   height: 50vh;
   background-color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .top-row {
@@ -25,7 +26,6 @@ header {
 
 .navbar {
   flex-basis: 25%;
- 
   overflow: hidden;
   padding: 20px;
 }
