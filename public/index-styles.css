@@ -1,12 +1,112 @@
 body {
-  background-image: url("images/oregon-rock-beach.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   height: 50vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 
-navbar {
-  background-color: ;
+.top-row {
+  display: flex;
+  flex-direction: row; 
+  margin-left: 200px;
+}
+
+.tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  
+  flex-basis: 50%;
+}
+
+.navbar {
+  flex-basis: 25%;
+ 
+  overflow: hidden;
+  padding: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.navbar a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.navbar-nav li {
+  list-style: none;
+  
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-content: center;
+  flex-basis: 25%;
+  padding: 25;
+  height: 50%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.8em;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+}
+
+.main {
+  width: 70%;
+  margin-top: 50px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iotd {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
