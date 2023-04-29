@@ -93,3 +93,12 @@ header {
 .footer3 {
   margin-top: 200px;
 }
+
+.absolute {
+  position: absolute;
+  top: 400px;
+  left: 0px;
+  right: 800px;
+  bottom: 0px;
+  margin: auto;
+}
