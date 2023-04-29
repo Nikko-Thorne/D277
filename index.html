@@ -56,7 +56,17 @@
             <section>
               <ul>
                 <li>
-                  <p>
+                  <p class="text">
+                    Welcome to the beautiful state of Oregon, located in the
+                    Pacific Northwest region of the United States. Known for its
+                    stunning natural scenery, from the rugged coastline and
+                    towering forests to the majestic Cascade Mountains and high
+                    desert plains, Oregon is home to some of the most
+                    picturesque landscapes in the country.
+                  </p>
+                </li>
+                <li>
+                  <p class="text">
                     Oregon is positioned within the Pacific Northwest of the
                     United States. Its capital is Salem, and its biggest town is
                     Portland. Here are a few key data approximately Oregon and 3
@@ -64,13 +74,13 @@
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p class="text">
                     As of 2019, the median household income in Oregon was
                     $65,712. This is higher than the national average of $62,843
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p class="text">
                     The estimated population of Oregon in 2020 was 4.24 million.
                   </p>
                 </li>
@@ -80,7 +90,7 @@
         </div>
         <div>
           <aside class="aside">
-            <table>
+            <table id>
               <tr>
                 <th>City</th>
                 <th>Population</th>
@@ -157,17 +167,69 @@
         />
       </div>
       <div>
-        <footer class="footer">
-          <div class="footer-text">
+        <footer id="footer">
+          <div id="footer-text">
             Click the logo to visit the official Oregon State Gov site.
           </div>
           <a href="https://www.oregon.gov" target="_blank">
             <img src="/public/images/oregon-logo.jpg" alt="Oregon State logo" />
           </a>
         </footer>
+        <div class="newsletter">
+          <button class="collapsible">Sign up for our newsletter</button>
+          <div class="content">
+            <form>
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Enter your first name"
+                required
+              />
+
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Enter your last name"
+                required
+              />
+
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+
+              <label for="confirm-email">Confirm Email Address:</label>
+              <input
+                type="email"
+                id="confirm-email"
+                name="confirm-email"
+                placeholder="Confirm your email address"
+                required
+              />
+
+              <label for="question">Question:</label>
+              <textarea
+                id="question"
+                name="question"
+                rows="4"
+                placeholder="Ask your question here"
+              ></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
 
-      <script src="/main.js" async></script>
+      <script src="/public/main.js" async></script>
     </div>
   </body>
 </html>
