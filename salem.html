@@ -1,79 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Oregon State Government Website - #{page}</title>
+    <title>Oregon State Government Website - Salem</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module">
       document.documentElement.classList.remove("no-js");
       document.documentElement.classList.add("js");
     </script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/public/style.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <div>
-        <header class="header"></header>
+      <div class="top-row">
+        <div class="tree">
+          <img
+            src="/public/images/vecteezy_green-tree-cartoon-isolated-on-white-background-vector_8132083.jpg"
+            alt="tree logo"
+            width="50px"
+            height="auto"
+          />
+        </div>
+        <header class="header">
+          <h1>OREGON.GOV</h1>
+        </header>
+        <div>
+          <nav class="navbar">
+            <ol class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/salem.html">Salem</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/portland.html">Portland</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/eugene.html">Eugene</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="Search.." />
+        </div>
+      </div>
+      <div class="content">
+        <div>
+          <main class="main">
+            <section>
+              <ul>
+                <li>
+                  <p class="text">
+                    Salem, which is situated in Marion County, serves as the
+                    capital city of Oregon and is home to an estimated 173,000
+                    individuals.
+                  </p>
+                </li>
+                <li>
+                  <p class="text">
+                    The city, which is part of the Willamette Valley region, was
+                    established in 1857 and features a blend of residential and
+                    commercial areas, thus classified as an urban locale.
+                  </p>
+                </li>
+                <li>
+                  <p class="text">
+                    At $62,232, the median household income in Salem is somewhat
+                    below the state's average of $68,319.
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </main>
+        </div>
+        <div>
+          <aside class="aside">
+            <img
+              src="/public/images/salem-or.webp"
+              alt="a photo of salem oregon"
+              width="100%"
+              ;
+              height="100%"
+              ;
+            />
+          </aside>
+        </div>
       </div>
       <div>
-        <nav class="navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="oregon.html">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="salem.html">Salem</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="portland.html">Portland</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="eugene.html">Eugene</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div>
-        <main class="main">
-          <ul>
-            <li>
-              <p>
-                Salem, which is situated in Marion County, serves as the capital
-                city of Oregon and is home to an estimated 173,000 individuals.
-              </p>
-            </li>
-            <li>
-              <p>
-                The city, which is part of the Willamette Valley region, was
-                established in 1857 and features a blend of residential and
-                commercial areas, thus classified as an urban locale.
-              </p>
-            </li>
-            <li>
-              <p>
-                At $62,232, the median household income in Salem is somewhat
-                below the state's average of $68,319.
-              </p>
-            </li>
-          </ul>
-        </main>
-      </div>
-
-      <div>
-        <aside class="aside"></aside>
-      </div>
-
-      <div>
-        <footer class="footer">
-          <img src="public/images/oregon-logo.jpg" alt="oregon state logo" />
+        <footer id="footer">
+          <div id="footer-text">
+            Click the logo to visit the official Oregon State Gov site.
+          </div>
+          <a href="https://www.oregon.gov" target="_blank">
+            <img src="/public/images/oregon-logo.jpg" alt="Oregon State logo" />
+          </a>
         </footer>
       </div>
-      <script src="/main.js" async></script>
+
+      <script src="/public/main.js" async></script>
     </div>
   </body>
 </html>
