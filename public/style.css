@@ -96,9 +96,15 @@ header {
 
 .absolute {
   position: absolute;
-  top: 400px;
-  left: 0px;
-  right: 800px;
+  top: 15vh;
+  left: 70vw;
+  right: 0px;
   bottom: 0px;
   margin: auto;
+}
+
+.img {
+  position: relative;
+  width: 10vw;
+  height: 10vh;
 }
